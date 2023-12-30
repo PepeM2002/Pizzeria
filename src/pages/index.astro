@@ -1,0 +1,75 @@
+---
+import Layout from '../layouts/Layout.astro'
+import Header from '../components/Header.astro'
+import Firs from '../components/Firs.astro'
+import Filter from '../components/Filter.astro'
+---
+
+<Layout title='Pizzeria '>
+	<Header />
+	<Firs />
+	<main>
+		<div class='flex flex-wrap justify-center'>
+			<div class='max-w-xs mx-4 my-8 bg-white rounded overflow-hidden shadow-lg'>
+				<img
+					class='w-full h-48'
+					src='https://assets.elgourmet.com/wp-content/uploads/2023/03/Fm5utL5Ga4fRKIMETODOS2WoqKu8CWS2apF-1024x683.png'
+					alt='Pizza Margherita'
+				/>
+				<div class='px-6 py-4'>
+					<div class='font-bold text-xl mb-2 text-gray-800'>Pizza Margherita</div>
+					<p class='text-gray-700 text-base'>
+						Tomate, mozzarella, albahaca fresca, aceite de oliva.
+					</p>
+					<p class='text-orange-600 text-xl font-bold mt-4'>$120.99 MX</p>
+				</div>
+			</div>
+
+			<div class='max-w-xs mx-4 my-8 bg-white rounded overflow-hidden shadow-lg'>
+				<img
+					class='w-full h-48'
+					src='https://images.hola.com/imagenes/cocina/recetas/20230208226048/pizza-pepperoni/1-201-303/pizza-pepperoni-age-t.jpg?tx=w_680'
+					alt='Pizza Pepperoni'
+				/>
+				<div class='px-6 py-4'>
+					<div class='font-bold text-xl mb-2 text-gray-800'>Pizza Pepperoni</div>
+					<p class='text-gray-700 text-base'>Tomate, mozzarella, pepperoni, orégano.</p>
+					<p class='text-orange-600 text-xl font-bold mt-4'>$140.99 MX</p>
+				</div>
+			</div>
+
+			<div class='max-w-xs mx-4 my-8 bg-white rounded overflow-hidden shadow-lg'>
+				<img
+					class='w-full h-48'
+					src='https://www.institucionalcolombia.com/wp-content/uploads/2023/01/Pizza_vegetariana.jpg'
+					alt='Pizza Vegetariana'
+				/>
+				<div class='px-6 py-4'>
+					<div class='font-bold text-xl mb-2 text-gray-800'>Pizza Vegetariana</div>
+					<p class='text-gray-700 text-base'>
+						Tomate, mozzarella, champiñones, pimientos, aceitunas.
+					</p>
+					<p class='text-orange-600 text-xl font-bold mt-4'>$140.99 MX</p>
+				</div>
+			</div>
+
+			<div class='max-w-xs mx-4 my-8 bg-white rounded overflow-hidden shadow-lg'>
+				<img
+					class='w-full h-48'
+					src='https://recetinas.com/wp-content/uploads/2022/07/pizza-mexicana.jpg'
+					alt='Pizza Mexicana'
+				/>
+				<div class='px-6 py-4'>
+					<div class='font-bold text-xl mb-2 text-gray-800'>Pizza Mexicana</div>
+					<p class='text-gray-700 text-base'>
+						Salsa de tomate, carne molida, jalapeños, maíz, aguacate.
+					</p>
+					<p class='text-orange-600 text-xl font-bold mt-4'>$160.99 MX</p>
+				</div>
+			</div>
+
+			<!-- Agrega más cartas según sea necesario -->
+		</div>
+		<Filter />
+	</main>
+</Layout>
